@@ -20,8 +20,11 @@ const categories = [
 
 export default function CategorySlider() {
   return (
-    <div className="bg-[#FFEFE6] py-10 pl-6 sm:pl-20 w-full">
+    <div className="bg-[#FFEFE6] py-10 ">
       {/* Title */}
+      <div className=" w-[95%] sm:w-[90%] md:w-[85%] mx-auto">
+
+      
       <h2 className="font-montserrat font-bold text-[28px] sm:text-[32px] text-gray-800 mb-10">
         Categories
       </h2>
@@ -74,6 +77,7 @@ export default function CategorySlider() {
           display: none;
         }
       `}</style>
+      </div>
     </div>
   );
 }
