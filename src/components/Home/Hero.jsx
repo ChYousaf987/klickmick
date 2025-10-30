@@ -7,7 +7,7 @@ export default function HeroSection() {
     <>
       {/* HERO SECTION */}
       <section className="bg-[#FFEFE6] py-10 flex justify-center opacity-90">
-        <div className="relative w-[95%] h- sm:w-[90%] lg:w-[85%] rounded-3xl shadow-md overflow-hidden flex flex-col lg:flex-row items-center justify-between p-4 sm:p-6 lg:p-5 ">
+        <div className="relative w-[95%] h- sm:w-[90%] md:w-[85%] rounded-3xl shadow-md overflow-hidden flex flex-col lg:flex-row items-center justify-between  ">
 
           {/* 🔹 Blurred Background Layer */}
           <div

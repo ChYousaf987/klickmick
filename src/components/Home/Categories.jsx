@@ -14,20 +14,20 @@ const categories = [
   { name: "Collectibles", icon: BsBox, image: "/Collectibles.jpg" },
   { name: "Fashion", icon: LuShirt, image: "/Fashion.jpg" },
   { name: "Electronics", icon: CiMobile2, image: "/Electronics.jpg" },
-    { name: "Beauty", icon: RiGeminiLine, image: "/Beauty.jpg" },
+  { name: "Beauty", icon: RiGeminiLine, image: "/Beauty.jpg" },
   { name: "Home Decor", icon: CiHome, image: "/HomeDecor.jpg" },
 ];
 
 export default function CategorySlider() {
   return (
-    <div className="bg-[#FFEFE6] py-10 pl-20 w-[100%]">
+    <div className="bg-[#FFEFE6] py-10 pl-6 sm:pl-20 w-full">
       {/* Title */}
-      <h2 className="font-montserrat font-bold text-[32px] leading-[100%] text-gray-800 text-left  mb-10">
+      <h2 className="font-montserrat font-bold text-[28px] sm:text-[32px] text-gray-800 mb-10">
         Categories
       </h2>
 
       {/* Scroll Section */}
-      <div className="overflow-x-auto scrollbar-hide  py-2">
+      <div className="overflow-x-auto scrollbar-hide py-2">
         <div className="flex gap-8 justify-start items-center min-w-max">
           {categories.map((category, index) => {
             const Icon = category.icon;
@@ -36,25 +36,26 @@ export default function CategorySlider() {
                 key={index}
                 className="flex flex-col items-center cursor-pointer group"
               >
-                {/* Category Circle */}
-                <div className="relative w-[140px] h-[140px] rounded-full overflow-hidden shadow-md transition-transform duration-300 group-hover:scale-105">
+                {/* Equal Circle */}
+                <div className="relative w-[140px] h-[140px] sm:w-[160px] sm:h-[160px] rounded-full overflow-hidden shadow-md transition-transform duration-300 group-hover:scale-105 flex-shrink-0">
                   {/* Background Image */}
                   <img
                     src={category.image}
                     alt={category.name}
-                    className="w-full h-full object-cover transition-all duration-300 brightness-100"
+                    className="absolute inset-0 w-full h-full object-cover object-center"
                   />
 
                   {/* Orange Overlay */}
-                  <div className="absolute inset-0 bg-orange-500/60 flex items-center justify-center    group-hover:bg-orange-500/80 transition-all duration-300">
-                    <div className="absolute inset-0 bg-gray-300/40 flex items-center justify-center in m-auto   rounded-full p-2 w-10 h-10 ">
-                      <Icon className="text-white text-[28px] sm:text-[34px]" />
+                  <div className="absolute inset-0 bg-orange-500/60 flex items-center justify-center group-hover:bg-orange-500/80 transition-all duration-300">
+                    {/* Icon Circle (always proportional) */}
+                    <div className="bg-gray-200/50 rounded-full flex items-center justify-center w-12 h-12 sm:w-14 sm:h-14">
+                      <Icon className="text-white text-[26px] sm:text-[32px]" />
                     </div>
                   </div>
                 </div>
 
                 {/* Category Name */}
-                <p className="font-poppins font-normal text-[18px] leading-[27px] text-gray-700 text-center mt-3 group-hover:text-orange-600 transition-colors duration-300">
+                <p className="font-poppins text-[16px] sm:text-[18px] text-gray-700 text-center mt-3 group-hover:text-orange-600 transition-colors duration-300">
                   {category.name}
                 </p>
               </div>
