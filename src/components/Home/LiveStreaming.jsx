@@ -10,7 +10,7 @@ export default function LiveStreaming() {
       </h1>
 
       {/* ========== SECTION 1: Single Big Card ========== */}
-      <div className="flex justify-center mb-16">
+      <div className="flex justify-center mb-10 w-[1184px] px-auto">
         <div className="bg-white rounded-3xl shadow-lg overflow-hidden w-full sm:w-[80%]">
           {/* 🎥 Video Area */}
           <div className="h-[65%]">
@@ -20,34 +20,40 @@ export default function LiveStreaming() {
               loop
               muted
               playsInline
-              className="w-full h-[370px] object-cover"
+              className="w-full h-[470px] object-cover rounded-[20px]"
             ></video>
           </div>
 
           {/* Bottom Info */}
           <div className="p-5">
-            <div className="flex items-center gap-4 my-7 mx-6">
+            <div className="flex items-center gap-8 mt-12 mx-6">
               {/* 🔴 Red “L” Circle */}
-              <div className="w-8 h-8 rounded-full bg-red-500 flex items-center justify-center text-white font-bold text-lg">
+              <div className="w-8 h-8 rounded-full bg-[#ff6413] flex items-center justify-center text-white font-montserrat font-bold text-[20px] leading-[100%] tracking-[0px] text-center">
                 L
               </div>
 
               {/* Username */}
-              <div className="flex items-center justify-center text-gray-800 font-bold text-lg">
+              <div className="w-8 h-8 flex items-center justify-center text-black font-montserrat font-bold text-[20px] leading-[100%] tracking-[0px] text-center">
                 Lumia
               </div>
 
               {/* 👤 User Icon + Number */}
-              <div className="flex items-center ml-auto gap-2 text-gray-600 font-medium">
-                <FaUser className="text-gray-500" /> 1.2k
+              <div className="flex items-center pl-52 gap-2 text-gray-600 font-medium">
+                <FaUser className="text-gray-500" /> 789
               </div>
             </div>
 
             {/* 📝 Description */}
-            <p className="text-gray-700 text-sm leading-relaxed">
-              Join our live session and explore trending products from verified
-              sellers in real time. Interact, shop, and enjoy!
-            </p>
+            <div className="w-[552px] h-[65px]  left-[36px] opacity-100 text-gray-700">
+
+              <div className="w-[552px] left-[36px] opacity-100 text-gray-700">
+                <p className="font-poppins font-normal text-[16px] leading-[120%] tracking-[0px] pt-8 text-gray-700 mx-6">
+                  Illuminate your natural beauty with LUMÉA — a minimal skincare line crafted
+                  to restore your skin’s glow, balance, and confidence. Clean. Calm.
+                  Effortlessly radiant.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -61,7 +67,7 @@ export default function LiveStreaming() {
               className="bg-white rounded-3xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 "
             >
               {/* 🎥 Video Area */}
-              <div className="flex items-center justify-center bg-black h-[350px]">
+              <div className="flex items-center justify-center bg-black h-[380px] w-[320px]">
                 <video
                   src="/video.mp4" // ✅ Same video for all cards
                   autoPlay
@@ -75,21 +81,17 @@ export default function LiveStreaming() {
               {/* Bottom Info */}
               <div className="p-5">
                 <div className="flex items-center gap-3 mb-4">
-                  <div className="w-8 h-8 rounded-full bg-red-500 flex items-center justify-center text-white font-bold text-base">
-                    L
-                  </div>
-                  <div className="flex items-center justify-center text-gray-800 font-bold text-lg">
-                    Lumia
-                  </div>
+                 <div className="w-8 h-8 rounded-full bg-[#ff6413] flex items-center justify-center text-white font-montserrat font-bold text-[20px] leading-[100%] tracking-[0px] text-center">
+                L
+              </div>
                   <div className="flex items-center ml-auto gap-2 text-gray-600 font-medium">
                     <FaUser className="text-gray-500" />{" "}
-                    {Math.floor(Math.random() * 900 + 100)}+
+                    {Math.floor(Math.random() * 789)}
                   </div>
                 </div>
 
-                <p className="text-gray-700 text-sm leading-relaxed">
-                  Catch our exclusive live event featuring top trending items
-                  and interactive demos.
+                  <p className="font-poppins font-normal text-[12px] leading-[120%] tracking-[0px] pt-2 text-gray-700 mx-6">
+                 Illuminate your natural beauty with LUMÉA — a minimal skincare line crafted to restore your skin’s glow, balance, and confidence. Clean. Calm. Effortlessly radiant.
                 </p>
               </div>
             </div>
@@ -99,7 +101,7 @@ export default function LiveStreaming() {
 
       {/* ========== View All Button ========== */}
       <div className="flex justify-center">
-        <button className=" text-gray-800 font-medium px-6 py-2 rounded-full hover:bg-gray-100 transition-all duration-300">
+        <button className=" text-gray-800 font-medium px-6 rounded-full hover:bg-gray-100 transition-all duration-300">
           View All
         </button>
       </div>

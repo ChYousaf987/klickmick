@@ -59,7 +59,7 @@ export default function HeroSection() {
             />
 
             {/* ROTATED BORDERS */}
-            <div className="absolute w-[240px] sm:w-[260px] md:w-[310px] h-[240px] sm:h-[260px] md:h-[310px] border-[2px] border-[#a2a2a2] rounded-[40px] rotate-[14deg]"></div>
+            <div className="absolute w-[240px] sm:w-[260px] md:w-[310px] h-[240px] sm:h-[260px] md:h-[310px] border-[2px] border-[#a2a2a2] rounded-[40px] rotate-[12deg]"></div>
             <div className="absolute w-[240px] sm:w-[260px] md:w-[310px] h-[240px] sm:h-[260px] md:h-[310px] border-[2px] border-[#a2a2a2] rounded-[40px] -rotate-[18deg]"></div>
 
             {/* FLOATING BADGES */}
