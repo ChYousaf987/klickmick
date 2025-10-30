@@ -1,29 +1,26 @@
 import React from "react";
-import {
-  FaTshirt,
-  FaMobileAlt,
-  FaMagic,
-  FaHome,
-  FaGem,
-  FaBox,
-} from "react-icons/fa";
+import {  FaRegGem,} from "react-icons/fa";
+import { LuShirt, } from "react-icons/lu";
+import { CiMobile2 ,CiHome} from "react-icons/ci";
+import { BsBox } from "react-icons/bs";
+import { RiGeminiLine } from "react-icons/ri";
 
 const categories = [
-  { name: "Fashion", icon: FaTshirt, image: "/Fashion.jpg" },
-  { name: "Electronics", icon: FaMobileAlt, image: "/Electronics.jpg" },
-  { name: "Beauty", icon: FaMagic, image: "/Beauty.jpg" },
-  { name: "Home Decor", icon: FaHome, image: "/HomeDecor.jpg" },
-  { name: "Jewelry", icon: FaGem, image: "/Jewelry.jpg" },
-  { name: "Collectibles", icon: FaBox, image: "/Collectibles.jpg" },
-  { name: "Fashion", icon: FaTshirt, image: "/Fashion.jpg" },
-  { name: "Electronics", icon: FaMobileAlt, image: "/Electronics.jpg" },
+  { name: "Fashion", icon: LuShirt, image: "/Fashion.jpg" },
+  { name: "Electronics", icon: CiMobile2, image: "/Electronics.jpg" },
+  { name: "Beauty", icon:  RiGeminiLine, image: "/Beauty.jpg" },
+  { name: "Home Decor", icon: CiHome, image: "/HomeDecor.jpg" },
+  { name: "Jewelry", icon: FaRegGem, image: "/Jewelry.jpg" },
+  { name: "Collectibles", icon: BsBox, image: "/Collectibles.jpg" },
+  { name: "Fashion", icon: LuShirt, image: "/Fashion.jpg" },
+  { name: "Electronics", icon: CiMobile2, image: "/Electronics.jpg" },
 ];
 
 export default function CategorySlider() {
   return (
     <div className="bg-[#FFEFE6] py-8 sm:px-6">
       {/* Heading */}
-      <h2 className="text-2xl px-16 sm:text-3xl font-semibold text-gray-800 mb-6 sm:mb-8 text-left">
+      <h2 className="font-montserrat font-bold text-[32px] leading-[100%] tracking-[0px] text-gray-800 text-start px-16 mb-6 sm:mb-8">
         Categories
       </h2>
 
@@ -46,17 +43,17 @@ export default function CategorySlider() {
                   <img
                     src={category.image}
                     alt={category.name}
-                    className="w-full h-full object-cover"
+                    className="w-full h-full object-cover brightness-110 contrast-110 saturate-125 transition-all duration-300"
                   />
 
-                  {/* ✅ Full orange background for icon */}
-                  <div className="absolute inset-0 flex items-center justify-center bg-orange-300/90">
-                    <Icon className="w-8 h-8 sm:w-10 sm:h-10 text-white" />
+                  {/* ✅ Clearer orange overlay */}
+                  <div className="absolute inset-0 flex items-center justify-center bg-orange-400/60 group-hover:bg-orange-500/80 transition-all duration-300">
+                    <Icon className="w-8 h-8 sm:w-10 sm:h-10 text-white drop-shadow-md" />
                   </div>
                 </div>
 
                 {/* Category Name */}
-                <p className="mt-2 sm:mt-3 text-sm sm:text-base font-medium text-gray-700 group-hover:text-orange-600 transition-colors text-center">
+                <p className="font-poppins font-normal text-[18px] leading-[27px] tracking-[0px] text-center text-gray-700 group-hover:text-orange-600 transition-colors mt-2 sm:mt-3">
                   {category.name}
                 </p>
               </div>
