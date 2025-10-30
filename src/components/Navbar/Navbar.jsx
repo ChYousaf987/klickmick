@@ -56,6 +56,7 @@ export default function Navbar() {
           <span className="font-semibold text-[18px] leading-[100%] tracking-[0.5%] font-poppins">All</span>
         </div>
 
+
         <span className="cursor-pointer hover:text-orange-400 text-[16px] leading-[100%] tracking-[0.5%] font-poppins text-[#D2D2D2]">
           Live Streams
         </span>
