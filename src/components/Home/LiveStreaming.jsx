@@ -67,7 +67,7 @@ export default function LiveStreaming() {
               className="bg-white rounded-3xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 "
             >
               {/* 🎥 Video Area */}
-              <div className="flex items-center justify-center bg-black h-[380px] w-[320px]">
+              <div className="flex items-center justify-center bg-black h-[380px]">
                 <video
                   src="/video.mp4" // ✅ Same video for all cards
                   autoPlay

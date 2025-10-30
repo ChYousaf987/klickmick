@@ -14,18 +14,20 @@ const categories = [
   { name: "Collectibles", icon: BsBox, image: "/Collectibles.jpg" },
   { name: "Fashion", icon: LuShirt, image: "/Fashion.jpg" },
   { name: "Electronics", icon: CiMobile2, image: "/Electronics.jpg" },
+    { name: "Beauty", icon: RiGeminiLine, image: "/Beauty.jpg" },
+  { name: "Home Decor", icon: CiHome, image: "/HomeDecor.jpg" },
 ];
 
 export default function CategorySlider() {
   return (
-    <div className="bg-[#FFEFE6] py-10">
+    <div className="bg-[#FFEFE6] py-10 pl-20 w-[100%]">
       {/* Title */}
-      <h2 className="font-montserrat font-bold text-[32px] leading-[100%] text-gray-800 text-left px-16 mb-10">
+      <h2 className="font-montserrat font-bold text-[32px] leading-[100%] text-gray-800 text-left  mb-10">
         Categories
       </h2>
 
       {/* Scroll Section */}
-      <div className="overflow-x-auto scrollbar-hide px-16">
+      <div className="overflow-x-auto scrollbar-hide  py-2">
         <div className="flex gap-8 justify-start items-center min-w-max">
           {categories.map((category, index) => {
             const Icon = category.icon;
@@ -44,8 +46,10 @@ export default function CategorySlider() {
                   />
 
                   {/* Orange Overlay */}
-                  <div className="absolute inset-0 bg-orange-500/60 flex items-center justify-center group-hover:bg-orange-500/80 transition-all duration-300">
-                    <Icon className="text-white text-[28px] sm:text-[34px]" />
+                  <div className="absolute inset-0 bg-orange-500/60 flex items-center justify-center    group-hover:bg-orange-500/80 transition-all duration-300">
+                    <div className="absolute inset-0 bg-gray-300/40 flex items-center justify-center in m-auto   rounded-full p-2 w-10 h-10 ">
+                      <Icon className="text-white text-[28px] sm:text-[34px]" />
+                    </div>
                   </div>
                 </div>
 
