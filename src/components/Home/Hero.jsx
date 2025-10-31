@@ -63,11 +63,11 @@ export default function HeroSection() {
             <div className="absolute w-[240px] sm:w-[260px] md:w-[310px] h-[240px] sm:h-[260px] md:h-[310px] border-[2px] border-[#a2a2a2] rounded-[40px] -rotate-[18deg]"></div>
 
             {/* FLOATING BADGES */}
-            <div className="absolute top-2 sm:top-8 right-2 sm:right-16 bg-white shadow-lg px-2 sm:px-3 py-1 rounded-full flex items-center gap-1 sm:gap-2 text-[10px] sm:text-sm font-medium font-opensans">
+            <div className="absolute top-2 sm:top-8 right-1 sm:right-12 bg-white shadow-lg px-2 sm:px-3 py-1 rounded-full flex items-center gap-1 sm:gap-2 text-[10px] sm:text-sm font-medium font-opensans">
               <FaCheckCircle className="bg-[#ff6413] text-white rounded-full p-1 text-xl" /> Verified Sellers
             </div>
 
-            <div className="absolute bottom-28 left-4 sm:left-6 bg-white shadow-lg px-2 sm:px-3 py-1 rounded-full flex items-center gap-1 sm:gap-2 text-[10px] sm:text-sm font-medium font-opensans">
+            <div className="absolute bottom-32 left-4 sm:left- bg-white shadow-lg px-2 sm:px-3 py-1 rounded-full flex items-center gap-1 sm:gap-2 text-[10px] sm:text-sm font-medium font-opensans">
               <RiLockPasswordFill className="bg-[#ff6413] text-white rounded-full p-1 text-xl" /> Secure Payment
             </div>
 

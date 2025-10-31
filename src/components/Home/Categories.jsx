@@ -20,50 +20,49 @@ const categories = [
 
 export default function CategorySlider() {
   return (
-    <div className="bg-[#FFEFE6] py-10 ">
-      {/* Title */}
-      <div className=" w-[95%] sm:w-[90%] md:w-[85%] mx-auto">
+    <div className="bg-[#FFEFE6] py-8 w-full">
+      {/* Container with responsive margin */}
+      <div className=" pl-4 sm:px-2 md:ml-20">
+        {/* Title */}
+        <h2 className="font-montserrat font-bold text-[24px] sm:text-[28px] text-gray-800 mb-6">
+          Categories
+        </h2>
 
-      
-      <h2 className="font-montserrat font-bold text-[28px] sm:text-[32px] text-gray-800 mb-10">
-        Categories
-      </h2>
+        {/* Scroll Section */}
+        <div className="overflow-x-auto scrollbar-hide py-2 px-2">
+          <div className="flex gap-4 sm:gap-6 min-w-max">
+            {categories.map((category, index) => {
+              const Icon = category.icon;
+              return (
+                <div
+                  key={index}
+                  className="flex flex-col items-center cursor-pointer group"
+                >
+                  {/* Circle Image */}
+                  <div className="relative w-[120px] h-[120px] sm:w-[160px] sm:h-[160px] rounded-full overflow-hidden shadow-md transition-transform duration-300 group-hover:scale-105 flex-shrink-0">
+                    <img
+                      src={category.image}
+                      alt={category.name}
+                      className="absolute inset-0 w-full h-full object-cover object-center"
+                    />
 
-      {/* Scroll Section */}
-      <div className="overflow-x-auto scrollbar-hide py-2">
-        <div className="flex gap-8 justify-start items-center min-w-max">
-          {categories.map((category, index) => {
-            const Icon = category.icon;
-            return (
-              <div
-                key={index}
-                className="flex flex-col items-center cursor-pointer group"
-              >
-                {/* Equal Circle */}
-                <div className="relative w-[140px] h-[140px] sm:w-[160px] sm:h-[160px] rounded-full overflow-hidden shadow-md transition-transform duration-300 group-hover:scale-105 flex-shrink-0">
-                  {/* Background Image */}
-                  <img
-                    src={category.image}
-                    alt={category.name}
-                    className="absolute inset-0 w-full h-full object-cover object-center"
-                  />
-
-                  {/* Orange Overlay */}
-                  <div className="absolute inset-0 bg-orange-500/60 flex items-center justify-center group-hover:bg-orange-500/80 transition-all duration-300">
-                    {/* Icon Circle (always proportional) */}
-                    <div className="bg-gray-200/50 rounded-full flex items-center justify-center w-12 h-12 sm:w-14 sm:h-14">
-                      <Icon className="text-white text-[26px] sm:text-[32px]" />
+                    {/* Orange Overlay */}
+                    <div className="absolute inset-0 bg-orange-500/50 flex items-center justify-center group-hover:bg-orange-500/70 transition-all duration-300">
+                      {/* Icon Circle */}
+                      <div className="bg-gray-200/50 rounded-full flex items-center justify-center w-10 h-10 sm:w-14 sm:h-14">
+                        <Icon className="text-white text-2xl sm:text-3xl" />
+                      </div>
                     </div>
                   </div>
-                </div>
 
-                {/* Category Name */}
-                <p className="font-poppins text-[16px] sm:text-[18px] text-gray-700 text-center mt-3 group-hover:text-orange-600 transition-colors duration-300">
-                  {category.name}
-                </p>
-              </div>
-            );
-          })}
+                  {/* Category Name */}
+                  <p className="font-poppins text-[14px] sm:text-[16px] text-gray-700 text-center mt-2 group-hover:text-orange-600 transition-colors duration-300">
+                    {category.name}
+                  </p>
+                </div>
+              );
+            })}
+          </div>
         </div>
       </div>
 
@@ -77,7 +76,6 @@ export default function CategorySlider() {
           display: none;
         }
       `}</style>
-      </div>
     </div>
   );
 }

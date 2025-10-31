@@ -21,11 +21,11 @@ const Footer = () => {
                                 <div className="w-10 h-10 rounded-lg flex items-center justify-center">
                                     <img src="/FooterLogo.png" alt="logo" />
                                 </div>
-                                <span className="text-xl font-bold text-white">
+                                <span className="text-xl font-bold font-montserrat text-white">
                                     Klickmick
                                 </span>
                             </div>
-                            <p className="text-sm leading-relaxed max-w-xs">
+                            <p className="text-sm leading-relaxed max-w-xs font-montserrat text-[#2a2a2a]">
                                 Connecting buyers and sellers through live shopping streams
                                 across Ukraine, USA, and Europe.
                             </p>
@@ -33,8 +33,8 @@ const Footer = () => {
 
                         {/* Quick Links */}
                         <div className="flex-1">
-                            <h3 className="font-semibold text-white mb-3">Quick Links</h3>
-                            <ul className="space-y-1 text-sm">
+                            <h3 className="font-semibold text-white mb-3 font-montserrat">Quick Links</h3>
+                            <ul className="space-y-1 text-sm font-montserrat text-[#2a2a2a]">
                                 <li>
                                     <a href="#" className="hover:text-orange-500 transition">
                                         Home
@@ -63,8 +63,8 @@ const Footer = () => {
                     <div className="flex flex-col md:flex-row justify-between gap-8">
                         {/* Support */}
                         <div className="flex-1">
-                            <h3 className="font-semibold text-white mb-2">Support</h3>
-                            <ul className="space-y-1 text-sm">
+                            <h3 className="font-semibold text-white mb-2 font-montserrat">Support</h3>
+                            <ul className="space-y-1 text-sm font-montserrat text-[#2a2a2a]">
                                 <li>
                                     <a href="#" className="hover:text-orange-500 transition">
                                         Contact Us
@@ -90,8 +90,8 @@ const Footer = () => {
 
                         {/* Contact */}
                         <div className="flex-1">
-                            <h3 className="font-semibold text-white mb-3">Contact</h3>
-                            <ul className="space-y-2 text-sm">
+                            <h3 className="font-semibold text-white mb-3 font-montserrat">Contact</h3>
+                            <ul className="space-y-2 text-sm font-montserrat text-[#2a2a2a]">
                                 <li className="flex items-center gap-2">
                                     <FiMail className="text-orange-500 text-lg" />
                                     <a
