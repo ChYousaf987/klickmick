@@ -91,7 +91,7 @@ export default function Navbar() {
         <div className="flex items-center space-x-2">
           {/* Hamburger icon (mobile only) */}
           <button
-            className="md:hidden text-2xl text-[#ff6413]"
+            className="md:hidden text-4xl text-[#ff6413] mr-2"
             onClick={() => setMenuOpen(!menuOpen)}
           >
             {menuOpen ? <FiX /> : <FiMenu />}
@@ -101,8 +101,9 @@ export default function Navbar() {
           <img
             src="/logo.png"
             alt="Logo"
-            className="h-10 w-auto object-contain cursor-pointer rounded-lg hidden md:block"
+            className="h-10 w-auto object-contain cursor-pointer rounded-lg max-md:h-9 "
           />
+
         </div>
 
         {/* 🔸 Search Bar (desktop only) */}

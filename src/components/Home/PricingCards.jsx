@@ -5,10 +5,10 @@ const PricingCards = () => {
   return (
     <section className="bg-[#FFF1EB] pt-8 pb-12">
       <div className="max-w-7xl mx-auto text-center px-4 sm:px-6 md:px-8">
-        <h2 className="text-3xl md:text-3xl font-bold text-gray-900 mb-2 font-montserrat">
+        <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-2 font-montserrat text-start sm:text-center">
           Join Clickmick Today
         </h2>
-        <p className="text-gray-600 mb-10 font-montserrat">
+        <p className="text-gray-600 mb-10 font-montserrat text-start sm:text-center">
           Choose your role & start your journey
         </p>
 

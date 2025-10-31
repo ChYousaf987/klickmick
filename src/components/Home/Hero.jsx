@@ -7,7 +7,7 @@ export default function HeroSection() {
     <>
       {/* HERO SECTION */}
       <section className="bg-[#FFEFE6] py-10 flex justify-center opacity-90">
-        <div className="relative w-[95%] sm:w-[90%] md:w-[85%] rounded-3xl shadow-md overflow-hidden flex flex-col lg:flex-row items-center justify-between">
+        <div className="relative w-[92%] sm:w-[90%] md:w-[85%] rounded-3xl shadow-md overflow-hidden flex flex-col lg:flex-row items-center justify-between">
 
           {/* 🔹 Blurred Background Layer */}
           <div
@@ -17,12 +17,13 @@ export default function HeroSection() {
           {/* 🔹 Content Layer (above blur) */}
           <div className="relative z-10 lg:w-1/2 space-y-4 sm:space-y-5 text-center lg:text-left text-white py-20 px-6 sm:px-12">
             {/* Tag */}
-            <div className="inline-flex items-center gap-2 bg-white text-orange-600 font-medium px-3 py-1 rounded-full shadow-sm text-xs sm:text-sm">
+            <div className="hidden sm:inline-flex items-center gap-2 bg-white text-orange-600 font-medium px-3 py-1 rounded-full shadow-sm text-xs sm:text-sm">
               <FaShoppingBag className="text-orange-600 w-[24px] h-[24px]" />
               <span className="font-opensans font-semibold text-[13px] text-[#000000]">
                 The Best Online Store
               </span>
             </div>
+
 
             {/* Heading */}
             <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-montserrat font-bold text-[#ff6413] pt-6 pb-2 leading-relaxed">

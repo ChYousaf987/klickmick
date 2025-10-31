@@ -5,12 +5,13 @@ export default function LiveStreaming() {
   return (
     <div className="bg-[#FFEFE6] min-h-screen py-8 px-4 sm:px-6 md:px-10 w-full">
       {/* Page Title */}
-      <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-800 mb-10 text-center">
+      <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-800 mb-10 text-start sm:text-center">
         Live Streaming
       </h1>
 
+
       {/* ========== SECTION 1: Single Big Card ========== */}
-      <div className="flex justify-center mb-10 w-full">
+      <div className="flex justify-center mb-5 sm:mb-10 w-full">
         <div className="bg-white rounded-3xl shadow-lg overflow-hidden w-full max-w-[1184px] sm:w-[90%] md:w-[80%]">
           {/* 🎥 Video Area */}
           <div className="h-[280px] sm:h-[360px] md:h-[440px]">
@@ -86,7 +87,7 @@ export default function LiveStreaming() {
                   </div>
                 </div>
 
-                <p className="font-poppins font-normal text-[12px] sm:text-[13px] md:text-[14px] leading-[120%] tracking-[0px] text-gray-700 text-center">
+                <p className="font-poppins font-normal text-[12px] sm:text-[13px] md:text-[14px] leading-[120%] tracking-[0px] text-gray-700 text-start">
                   Illuminate your natural beauty with LUMÉA — a minimal skincare line crafted
                   to restore your skin’s glow, balance, and confidence. Clean. Calm. Effortlessly radiant.
                 </p>
