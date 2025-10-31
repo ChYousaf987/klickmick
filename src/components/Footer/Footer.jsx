@@ -35,10 +35,10 @@ const Footer = () => {
                         <div className="flex-1">
                             <h3 className="font-semibold text-white mb-3 font-montserrat">Quick Links</h3>
                             <ul className="space-y-1 text-sm font-montserrat text-[#2a2a2a]">
-                                <li><a href="#" className="hover:text-orange-500 transition">Home</a></li>
-                                <li><a href="#" className="hover:text-orange-500 transition">Categories</a></li>
-                                <li><a href="#" className="hover:text-orange-500 transition">Live Streams</a></li>
-                                <li><a href="#" className="hover:text-orange-500 transition">Contact Us</a></li>
+                                <li><a href="#" className="hover:text-orange-500 transition hover:font-bold">Home</a></li>
+                                <li><a href="#" className="hover:text-orange-500 transition hover:font-bold">Categories</a></li>
+                                <li><a href="#" className="hover:text-orange-500 transition hover:font-bold">Live Streams</a></li>
+                                <li><a href="#" className="hover:text-orange-500 transition hover:font-bold">Contact Us</a></li>
                             </ul>
                         </div>
                     </div>
@@ -49,10 +49,10 @@ const Footer = () => {
                         <div className="flex-1">
                             <h3 className="font-semibold text-white mb-2 font-montserrat">Support</h3>
                             <ul className="space-y-1 text-sm font-montserrat text-[#2a2a2a]">
-                                <li><a href="#" className="hover:text-orange-500 transition">Contact Us</a></li>
-                                <li><a href="#" className="hover:text-orange-500 transition">Payment Security</a></li>
-                                <li><a href="#" className="hover:text-orange-500 transition">Terms & Privacy</a></li>
-                                <li><a href="#" className="hover:text-orange-500 transition">Help Center</a></li>
+                                <li><a href="#" className="hover:text-orange-500 transition hover:font-bold">Contact Us</a></li>
+                                <li><a href="#" className="hover:text-orange-500 transition hover:font-bold">Payment Security</a></li>
+                                <li><a href="#" className="hover:text-orange-500 transition hover:font-bold">Terms & Privacy</a></li>
+                                <li><a href="#" className="hover:text-orange-500 transition hover:font-bold">Help Center</a></li>
                             </ul>
                         </div>
 
@@ -62,7 +62,7 @@ const Footer = () => {
                             <ul className="space-y-2 text-sm font-montserrat text-[#2a2a2a]">
                                 <li className="flex items-center gap-2 flex-wrap">
                                     <FiMail className="text-orange-500 text-lg" />
-                                    <a href="mailto:support@klickmick.com" className="hover:text-orange-500 transition break-words">
+                                    <a href="mailto:support@klickmick.com" className="hover:text-orange-500 transition break-words hover:font-bold">
                                         support@klickmick.com
                                     </a>
                                 </li>
@@ -84,7 +84,7 @@ const Footer = () => {
                             <div className="w-full border-t border-gray-500"></div>
                         </div>
                         <div className="relative flex justify-center">
-                            <div className="bg-gradient-to-b from-[#cfcecd] to-[#dae0ef] px-4 h-2 rounded-full"></div>
+                            
                         </div>
                     </div>
                 </div>

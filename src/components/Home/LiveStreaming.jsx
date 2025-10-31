@@ -44,8 +44,8 @@ export default function LiveStreaming() {
             </div>
 
             {/* 📝 Description */}
-            <div className="w-full sm:w-[90%] md:w-[552px] mt-4 text-gray-700 mx-auto">
-              <p className="font-poppins font-normal text-[14px] sm:text-[15px] md:text-[16px] leading-[120%] tracking-[0px] text-center">
+            <div className="w-full sm:w-[90%] md:w-[552px] mt-4 text-gray-700 ">
+              <p className="font-poppins font-normal text-[14px] sm:text-[15px] md:text-[16px] leading-[120%] tracking-[0px] ">
                 Illuminate your natural beauty with LUMÉA — a minimal skincare line
                 crafted to restore your skin’s glow, balance, and confidence. Clean.
                 Calm. Effortlessly radiant.
@@ -64,7 +64,7 @@ export default function LiveStreaming() {
               className="bg-white rounded-3xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300"
             >
               {/* 🎥 Video Area */}
-              <div className="flex items-center justify-center bg-black h-[280px] sm:h-[320px] md:h-[380px]">
+              <div className="flex items-center justify-center bg-black h-[280px] sm:h-[320px] md:h-[400px]">
                 <video
                   src="/video.mp4"
                   autoPlay
