@@ -10,7 +10,7 @@ const LiveShopping = () => {
             Connect Sellers Through Live Shopping
           </h2>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-6">
             {/* Secure Payments */}
             <div className="bg-[#3C3C3C] rounded-2xl p-6 flex flex-col items-center text-center space-y-3 hover:shadow-lg transition-shadow">
               <div className="bg-orange-500 p-3 rounded-full">

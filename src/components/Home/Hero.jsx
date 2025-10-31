@@ -15,7 +15,7 @@ export default function HeroSection() {
           ></div>
 
           {/* 🔹 Content Layer (above blur) */}
-          <div className="relative z-10 lg:w-1/2 space-y-4 sm:space-y-5 text-center lg:text-left text-white py-20 px-6 sm:px-12">
+          <div className="relative z-10 lg:w-1/2 space-y-4 sm:space-y-5 text-center lg:text-left text-white py-20 px-6 sm:px-12 max-md:py-10">
             {/* Tag */}
             <div className="hidden sm:inline-flex items-center gap-2 bg-white text-orange-600 font-medium px-3 py-1 rounded-full shadow-sm text-xs sm:text-sm">
               <FaShoppingBag className="text-orange-600 w-[24px] h-[24px]" />
@@ -26,10 +26,10 @@ export default function HeroSection() {
 
 
             {/* Heading */}
-            <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-montserrat font-bold text-[#ff6413] pt-6 pb-2 leading-relaxed">
+            <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-montserrat font-bold text-[#ff6413] pt-6 pb-2 leading-relaxed max-md:pt-0">
               <span>Shop Live,</span>
               <br />
-              <span className="block mt-4">Connect Globally</span>
+              <span className="block mt-4 max-md:mt-0">Connect Globally</span>
             </h1>
 
             <div className="max-w-md sm:max-w-lg md:max-w-xl mx-auto lg:mx-0 px-2">
