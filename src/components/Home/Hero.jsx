@@ -1,6 +1,7 @@
 import React from "react";
 import { FaShoppingBag, FaCheckCircle, FaTruck } from "react-icons/fa";
 import { RiLockPasswordFill } from "react-icons/ri";
+import { Link } from "react-router-dom";
 
 export default function HeroSection() {
   return (
@@ -33,7 +34,7 @@ export default function HeroSection() {
             </h1>
 
             <div className="max-w-md sm:max-w-lg md:max-w-xl mx-auto lg:mx-0 px-2">
-              <p className="font-poppins font-normal text-[15px] sm:text-[16px] leading-[150%] text-gray-100 opacity-100">
+              <p className="font-poppins font-normal text-[16px] sm:text-[14px] leading-[150%] text-gray-100 tracking-tighter">
                 Experience the thrill of live shopping with Klickmick. Discover unique products,
                 interact with sellers, and join a vibrant community of buyers and sellers
                 across Ukraine, USA, and Europe.
@@ -41,9 +42,12 @@ export default function HeroSection() {
             </div>
 
             {/* Button */}
-            <button className="bg-[#ff6413] hover:bg-orange-600 text-white px-5 sm:px-6 py-2.5 sm:py-3 rounded-2xl font-semibold transition duration-300 text-sm sm:text-base w-[250px] sm:w-[320px] h-[55px] sm:h-[63px]">
+            <Link to="/journey">
+             <button className="bg-[#ff6413] hover:bg-orange-600 text-white px-5 sm:px-6 py-2.5 sm:py-3 rounded-2xl font-semibold transition duration-300 text-sm sm:text-base w-[250px] sm:mt-8 sm:w-[320px] h-[55px] sm:h-[63px]">
               Let’s Begin Your Journey
             </button>
+            </Link>
+           
           </div>
 
           {/* 🔹 RIGHT IMAGE SECTION (Hidden on small screens) */}
