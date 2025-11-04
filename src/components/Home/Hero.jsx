@@ -43,7 +43,7 @@ export default function HeroSection() {
 
             {/* Button */}
             <Link to="/journey">
-             <button className="bg-[#ff6413] hover:bg-orange-600 text-white px-5 sm:px-6 py-2.5 sm:py-3 rounded-2xl font-semibold transition duration-300 text-sm sm:text-base w-[250px] sm:mt-8 sm:w-[320px] h-[55px] sm:h-[63px]">
+             <button className="bg-[#ff6413] hover:bg-orange-600 text-white px-5 sm:px-6 py-2.5 sm:py-3 rounded-2xl font-semibold transition duration-300 text-sm sm:text-base w-[250px] sm:mt-8 sm:w-[320px] h-[55px] sm:h-[63px] mt-8">
               Let’s Begin Your Journey
             </button>
             </Link>
