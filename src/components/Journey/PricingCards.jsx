@@ -62,10 +62,12 @@ const PricingCards = () => {
                             </ul>
                         </div>
 
+                        <Link to="/buyer">
                         <button className="w-full sm:w-[95%] bg-[#e24d00] text-white font-semibold py-2.5 mx-auto font-montserrat rounded-[16px] hover:bg-orange-600 transition">
                             Register as Buyer
                         </button>
-                    </div>
+                        </Link>  
+                                         </div>
 
                     {/* ✅ Seller Card */}
                     <div className="bg-white rounded-3xl p-6 shadow-lg flex flex-col gap-y-2 justify-between">
