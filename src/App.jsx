@@ -2,7 +2,7 @@ import Navbar from "./components/Navbar/Navbar";
 import Home from "./components/Home/Home";
 import Footer from "./components/Footer/Footer";
 import Journey from "./components/Journey/Journey";
-import { BrowserRouter, Routes, Route } from "react-router-dom"; // ✅ use Routes instead of Router
+import { BrowserRouter, Routes, Route } from "react-router-dom"; 
 
 export default function App() {
   return (
