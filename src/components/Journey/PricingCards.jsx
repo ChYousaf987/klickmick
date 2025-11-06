@@ -11,11 +11,11 @@ const PricingCards = () => {
                 <div className="items-start justify-between mb-10">
                     <div className=" text-gray-800 mb-10 font-montserrat  text-start sm:text-center">
                         <Link to="/">
-                        <button className="flex items-center gap-2   font-poppins font-medium text-[16px]  hover:underline transition">
-                            <FaArrowLeft className=" w-5 h-5" />
-                            
+                            <button className="flex items-center gap-2   font-poppins font-medium text-[16px]  hover:underline transition">
+                                <FaArrowLeft className=" w-5 h-5" />
 
-                        </button>
+
+                            </button>
                         </Link>
                     </div>
                     <div>
@@ -63,11 +63,11 @@ const PricingCards = () => {
                         </div>
 
                         <Link to="/buyer">
-                        <button className="w-full sm:w-[95%] bg-[#e24d00] text-white font-semibold py-2.5 mx-auto font-montserrat rounded-[16px] hover:bg-orange-600 transition">
-                            Register as Buyer
-                        </button>
-                        </Link>  
-                                         </div>
+                            <button className="w-full sm:w-[95%] bg-[#e24d00] text-white font-semibold py-2.5 mx-auto font-montserrat rounded-[16px] hover:bg-orange-600 transition">
+                                Register as Buyer
+                            </button>
+                        </Link>
+                    </div>
 
                     {/* ✅ Seller Card */}
                     <div className="bg-white rounded-3xl p-6 shadow-lg flex flex-col gap-y-2 justify-between">
@@ -109,10 +109,12 @@ const PricingCards = () => {
                                 <span className="text-orange-500 text-xl font-bold">•</span> Secure payment protection
                             </li>
                         </ul>
-
+                        <Link to="/seller">
                         <button className="w-full sm:w-[95%] mx-auto bg-[#e24d00] text-white font-semibold py-2.5 rounded-[16px] hover:bg-orange-600 transition font-montserrat">
                             Register as Seller
                         </button>
+                        </Link>
+                        
                         <p className="w-full sm:w-[460px] h-[21px] text-[#6a7282] opacity-100 pt-2 font-poppins font-normal text-[12px] leading-[100%] text-center mx-auto">
                             A 7% commission will be automatically calculated and applied to each sale.
                         </p>

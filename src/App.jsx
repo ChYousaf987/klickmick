@@ -4,6 +4,10 @@ import Footer from "./components/Footer/Footer";
 import Journey from "./components/Journey/Journey";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Buyer from "./components/Register/Buyer/Buyer";
+import Upload from "./components/Register/Buyer/Uploadimg/Upload";
+import Seller from "./components/Register/Seller/Seller";
+import RegisterSeller from "./components/Register/Seller/RegisterSeller";
+
 
 export default function App() {
   return (
@@ -14,6 +18,9 @@ export default function App() {
           <Route path="/" element={<Home />} />
           <Route path="/journey" element={<Journey />} />
           <Route path="/buyer" element={<Buyer />} />
+          <Route path="/upload" element={<Upload/>} />
+          <Route path="/seller" element={<Seller/>}/>
+          <Route path="/regSeller" element={<RegisterSeller/>} />
         </Routes>
         <Footer />
       </BrowserRouter>

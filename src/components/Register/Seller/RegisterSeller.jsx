@@ -4,7 +4,7 @@ import { FiPhone } from "react-icons/fi";
 import { IoMdCheckmark } from "react-icons/io";
 import { Link } from "react-router-dom";
 
-export default function RegisterBuyer() {
+export default function RegisterSeller() {
     return (
         <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-[#FF6600] to-[#566990] py-10 px-4">
             <div className="bg-[#FFCBB1] w-full max-w-4xl opacity-100 rounded-[60px] p-6 sm:p-[96px] shadow-lg">
@@ -239,7 +239,7 @@ export default function RegisterBuyer() {
                     {/* Continue Button */}
                     <Link to="/upload">
                         <div className="flex justify-center">
-                        <button className="w-4/5 sm:w-[467px] bg-orange-500 text-white my-7 py-3 rounded-lg font-medium hover:bg-orange-600 transition-all duration-200 ">
+                        <button className="w-4/5 sm:w-[467px] bg-orange-500 text-white mt-7 py-3 rounded-lg font-medium hover:bg-orange-600 transition-all duration-200 ">
                             Continue
                         </button>
                     </div>
