@@ -453,7 +453,7 @@ export default function RegisterBuyer() {
           </div>
 
           {/* First & Last Name */}
-          <div className="flex sm:flex-row flex-col items-start gap-3 w-full max-sm:mb-4">
+          <div className="flex sm:flex-row sm:justify-center sm:items-center flex-col items-start gap-3 w-full max-sm:mb-4">
             <div className="flex items-center justify-center w-10 h-10 bg-gradient-to-b from-[#FF6413] to-[#FF8342] text-white rounded-full shadow-md sm:flex max-sm:hidden">
               <FaUser className="text-lg" />
             </div>

@@ -35,7 +35,7 @@ const PricingCards = () => {
                     <div className="bg-white rounded-3xl p-6 gap-y-6 shadow-lg flex flex-col justify-between">
                         <div>
                             <div className="flex justify-start mb-2 ml-3">
-                                <div className="bg-orange-500 p-3 rounded-full">
+                                <div className="bg-gradient-to-b from-[#FF6413] to-[#FF8342] p-3 rounded-full">
                                     <FaStore className="w-7 h-7 text-white" />
                                 </div>
                             </div>
@@ -48,22 +48,22 @@ const PricingCards = () => {
 
                             <ul className="text-left text-sm text-gray-700 space-y-1 ml-3">
                                 <li className="flex items-center gap-2">
-                                    <span className="text-orange-500 text-xl font-bold">•</span> Stream unlimited products
+                                    <span className="text-[#ff6413] text-xl font-bold">•</span> Stream unlimited products
                                 </li>
                                 <li className="flex items-center gap-2">
-                                    <span className="text-orange-500 text-xl font-bold">•</span> Build your follower base
+                                    <span className="text-[#ff6413] text-xl font-bold">•</span> Build your follower base
                                 </li>
                                 <li className="flex items-center gap-2">
-                                    <span className="text-orange-500 text-xl font-bold">•</span> Automatic payment processing
+                                    <span className="text-[#ff6413] text-xl font-bold">•</span> Automatic payment processing
                                 </li>
                                 <li className="flex items-center gap-2">
-                                    <span className="text-orange-500 text-xl font-bold">•</span> Shipping calculator included
+                                    <span className="text-[#ff6413] text-xl font-bold">•</span> Shipping calculator included
                                 </li>
                             </ul>
                         </div>
 
                         <Link to="/buyer">
-                            <button className="w-full sm:w-[95%] bg-[#e24d00] text-white font-semibold py-2.5 mx-auto font-montserrat rounded-[16px] hover:bg-orange-600 transition">
+                            <button className="w-full sm:w-[95%] bg-gradient-to-b from-[#FF6413] to-[#FF8342] text-white font-semibold py-2.5 mx-auto font-montserrat rounded-[16px] hover:bg-orange-600 transition">
                                 Register as Buyer
                             </button>
                         </Link>
@@ -72,7 +72,7 @@ const PricingCards = () => {
                     {/* ✅ Seller Card */}
                     <div className="bg-white rounded-3xl p-6 shadow-lg flex flex-col gap-y-2 justify-between">
                         <div className="flex justify-start mb-2 ml-3">
-                            <div className="bg-orange-500 p-3 rounded-full">
+                            <div className="bg-gradient-to-b from-[#FF6413] to-[#FF8342] p-3 rounded-full">
                                 <FaShoppingBag className="w-7 h-7 text-white" />
                             </div>
                         </div>
@@ -97,20 +97,20 @@ const PricingCards = () => {
 
                         <ul className="text-left text-sm text-gray-700 space-y-1 ml-0 sm:ml-3">
                             <li className="flex items-center gap-2">
-                                <span className="text-orange-500 text-xl font-bold">•</span> Access to all live streams
+                                <span className="text-[#ff6413] text-xl font-bold">•</span> Access to all live streams
                             </li>
                             <li className="flex items-center gap-2">
-                                <span className="text-orange-500 text-xl font-bold">•</span> Real-time bidding and purchases
+                                <span className="text-[#ff6413] text-xl font-bold">•</span> Real-time bidding and purchases
                             </li>
                             <li className="flex items-center gap-2">
-                                <span className="text-orange-500 text-xl font-bold">•</span> Email notifications from favorite sellers
+                                <span className="text-[#ff6413] text-xl font-bold">•</span> Email notifications from favorite sellers
                             </li>
                             <li className="flex items-center gap-2">
-                                <span className="text-orange-500 text-xl font-bold">•</span> Secure payment protection
+                                <span className="text-[#ff6413] text-xl font-bold">•</span> Secure payment protection
                             </li>
                         </ul>
                         <Link to="/seller">
-                        <button className="w-full sm:w-[95%] mx-auto bg-[#e24d00] text-white font-semibold py-2.5 rounded-[16px] hover:bg-orange-600 transition font-montserrat">
+                        <button className="w-full sm:w-[95%] mx-auto bg-gradient-to-b from-[#FF6413] to-[#FF8342] text-white font-semibold py-2.5 rounded-[16px] hover:bg-orange-600 transition font-montserrat">
                             Register as Seller
                         </button>
                         </Link>
