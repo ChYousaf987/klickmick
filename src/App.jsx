@@ -7,6 +7,7 @@ import Buyer from "./components/Register/Buyer/Buyer";
 import Upload from "./components/Register/Buyer/Uploadimg/Upload";
 import Seller from "./components/Register/Seller/Seller";
 import RegisterSeller from "./components/Register/Seller/RegisterSeller";
+import UploadDocument from "./components/Register/Seller/UploadDocument";
 
 
 export default function App() {
@@ -21,6 +22,7 @@ export default function App() {
           <Route path="/upload" element={<Upload/>} />
           <Route path="/seller" element={<Seller/>}/>
           <Route path="/regSeller" element={<RegisterSeller/>} />
+          <Route path="/uploaddoc" element={<UploadDocument/>}/>
         </Routes>
         <Footer />
       </BrowserRouter>
