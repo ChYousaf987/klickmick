@@ -36,19 +36,19 @@ const Seller = () => {
                         <p className="text-[16px]   text-[#3c3c3c] font-poppins mb-4">Duration: 6 Months</p>
                         <h4 className="text-3xl font-bold text-green-600 mb-6">$10</h4>
                         <ul className="text-[16px] text-[#3c3c3c] font-poppins space-y-2 text-left mb-6">
-                            <li className="flex items-center gap-2">
+                            <li className="flex items-center gap-2 max-sm:text-sm">
                                 <span className="text-orange-500 text-xl font-bold">•</span>
                                 Access to all seller tools
                             </li>
-                            <li className="flex items-center gap-2">
+                            <li className="flex items-center gap-2 max-sm:text-sm">
                                 <span className="text-orange-500 text-xl font-bold">•</span>
                                 Verified seller profile
                             </li>
-                            <li className="flex items-center gap-2">
+                            <li className="flex items-center gap-2 max-sm:text-sm ">
                                 <span className="text-orange-500 text-xl font-bold">•</span>
                                 Stream up to 100 products
                             </li>
-                            <li className="flex items-center gap-2">
+                            <li className="flex items-center gap-2 max-sm:text-sm">
                                 <span className="text-orange-500 text-xl font-bold">•</span>
                                 Email & stream notifications
                             </li>
@@ -71,19 +71,19 @@ const Seller = () => {
                         <p className="text-[16px]   text-[#3c3c3c] font-poppins mb-4">Duration: 1 Year</p>
                         <h4 className="text-3xl font-bold text-green-600 mb-6">$16</h4>
                         <ul className="text-[16px] text-[#3c3c3c] font-poppins space-y-2 text-left mb-6">
-                            <li className="flex items-center gap-2">
+                            <li className="flex items-center gap-2 max-sm:text-sm">
                                 <span className="text-orange-500 text-xl font-bold">•</span>
                                 Access to all seller tools
                             </li>
-                            <li className="flex items-center gap-2">
+                            <li className="flex items-center gap-2 max-sm:text-sm">
                                 <span className="text-orange-500 text-xl font-bold">•</span>
                                 Verified seller profile
                             </li>
-                            <li className="flex items-center gap-2">
+                            <li className="flex items-center gap-2 max-sm:text-sm">
                                 <span className="text-orange-500 text-xl font-bold">•</span>
                                 Stream up to 100 products
                             </li>
-                            <li className="flex items-center gap-2">
+                            <li className="flex items-center gap-2 max-sm:text-sm">
                                 <span className="text-orange-500 text-xl font-bold">•</span>
                                 Email & stream notifications
                             </li>
