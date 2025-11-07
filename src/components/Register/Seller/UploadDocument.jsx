@@ -1,6 +1,6 @@
 import React from "react";
 import { FiUploadCloud } from "react-icons/fi";
-
+import { Link } from "react-router-dom";
 const UploadDocument = () => {
   return (
     <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-[#FF6600] to-[#566990] px-4 py-20">
@@ -17,10 +17,10 @@ const UploadDocument = () => {
 
         {/* Progress Dots */}
         <div className="flex justify-center items-center space-x-2 mt-3">
-          <span className="w-3 h-3 bg-gray-300 rounded-full"></span>
-          <span className="w-3 h-3 bg-gray-300 rounded-full"></span>
+          <span className="w-3 h-3 bg-[#8888] rounded-full"></span>
+          <span className="w-3 h-3 bg-[#8888] rounded-full"></span>
           <span className="w-3 h-3 bg-orange-500 rounded-full"></span>
-          <span className="w-3 h-3 bg-gray-300 rounded-full"></span>
+          <span className="w-3 h-3 bg-[#8888] rounded-full"></span>
         </div>
 
         {/* Upload Boxes */}
@@ -81,9 +81,12 @@ const UploadDocument = () => {
         </div>
 
         {/* Continue Button */}
+        <Link to="/face">
         <button className="w-[60%] mx-auto bg-[#FF6413] text-white font-semibold py-3 rounded-[10px] hover:bg-orange-600 transition mt-6 font-opensans text-[18px] max-sm:w-[80%] max-sm:text-[16px]">
           Continue
         </button>
+        </Link>
+        
 
         {/* Footer Note */}
         <p className="text-xs text-[#6B7280] font-sans mt-3">

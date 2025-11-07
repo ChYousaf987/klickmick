@@ -16,9 +16,9 @@ const Seller = () => {
                 {/* Dots */}
                 <div className="flex justify-center items-center space-x-2 mt-3">
                     <span className="w-3 h-3 bg-orange-500 rounded-full"></span>
-                    <span className="w-3 h-3 bg-gray-300 rounded-full"></span>
-                    <span className="w-3 h-3 bg-gray-300 rounded-full"></span>
-                    <span className="w-3 h-3 bg-gray-300 rounded-full"></span>
+                    <span className="w-3 h-3 bg-[#8888] rounded-full"></span>
+                    <span className="w-3 h-3 bg-[#8888] rounded-full"></span>
+                    <span className="w-3 h-3 bg-[#8888] rounded-full"></span>
                 </div>
 
                 {/* Plans Section */}
