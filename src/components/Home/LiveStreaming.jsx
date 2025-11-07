@@ -9,7 +9,6 @@ export default function LiveStreaming() {
         Live Streaming
       </h1>
 
-
       {/* ========== SECTION 1: Single Big Card ========== */}
       <div className="flex justify-center mb-5 sm:mb-10 w-full">
         <div className="bg-white rounded-3xl shadow-lg overflow-hidden w-full max-w-[1184px] sm:w-[90%] md:w-[80%]">
@@ -47,9 +46,9 @@ export default function LiveStreaming() {
             {/* 📝 Description */}
             <div className="w-full sm:w-[90%] md:w-[552px] mt-4 text-gray-700 ">
               <p className="font-poppins font-normal text-[14px] sm:text-[15px] md:text-[16px] leading-[120%] tracking-[0px] ">
-                Illuminate your natural beauty with LUMÉA — a minimal skincare line
-                crafted to restore your skin’s glow, balance, and confidence. Clean.
-                Calm. Effortlessly radiant.
+                Illuminate your natural beauty with LUMÉA — a minimal skincare
+                line crafted to restore your skin’s glow, balance, and
+                confidence. Clean. Calm. Effortlessly radiant.
               </p>
             </div>
           </div>
@@ -83,13 +82,15 @@ export default function LiveStreaming() {
                     L
                   </div>
                   <div className="flex items-center ml-auto gap-2 text-gray-600 font-medium">
-                    <FaUser className="text-gray-500" /> {Math.floor(Math.random() * 789)}
+                    <FaUser className="text-gray-500" />{" "}
+                    {Math.floor(Math.random() * 789)}
                   </div>
                 </div>
 
                 <p className="font-poppins font-normal text-[12px] sm:text-[13px] md:text-[14px] leading-[120%] tracking-[0px] text-gray-700 text-start">
-                  Illuminate your natural beauty with LUMÉA — a minimal skincare line crafted
-                  to restore your skin’s glow, balance, and confidence. Clean. Calm. Effortlessly radiant.
+                  Illuminate your natural beauty with LUMÉA — a minimal skincare
+                  line crafted to restore your skin’s glow, balance, and
+                  confidence. Clean. Calm. Effortlessly radiant.
                 </p>
               </div>
             </div>
