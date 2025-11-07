@@ -83,7 +83,7 @@ const PricingCards = () => {
                             Register, Subscribe, and enjoy Live Auctions
                         </p>
 
-                        <div className="grid justify-start gap-5 mb-4 ml-0 sm:ml-12">
+                        <div className="grid justify-start gap-5 mb-4 ml-3 sm:ml-12">
                             <div className="flex justify-start items-end gap-10 sm:gap-10">
                                 <span className="text-lg text-[#3c3c3c] font-montserrat">6 Months</span>
                                 <span className="text-xl font-bold text-green-600 font-montserrat">$10</span>
@@ -95,7 +95,7 @@ const PricingCards = () => {
                             </div>
                         </div>
 
-                        <ul className="text-left text-sm text-gray-700 space-y-1 ml-0 sm:ml-3">
+                        <ul className="text-left text-sm text-gray-700 space-y-1 ml-3">
                             <li className="flex items-center gap-2">
                                 <span className="text-[#ff6413] text-xl font-bold">•</span> Access to all live streams
                             </li>

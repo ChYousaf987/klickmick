@@ -19,11 +19,10 @@ export default function RegisterBuyer() {
         </div>
 
         <form className="space-y-6">
-
           {/* Nick Name */}
-          <div className="flex sm:flex-row flex-col items-start gap-3 w-full max-sm:mb-4">
-            <div className="flex items-center justify-center w-10 h-10 bg-gradient-to-b from-[#FF6413] to-[#FF8342] text-white rounded-full shadow-md sm:flex max-sm:hidden">
-              <FaUser className="text-lg " />
+          <div className="flex sm:flex-row flex-col items-center gap-3 w-full max-sm:mb-4">
+            <div className="flex items-center justify-center w-10 h-9 bg-gradient-to-b from-[#FF6413] to-[#FF8342] text-white rounded-full shadow-md sm:flex max-sm:hidden self-start mt-[26px]">
+              <FaUser className="text-lg" />
             </div>
             <div className="flex flex-col w-full">
               <label className="block text-sm font-medium text-[#3c3c3c] font-poppins mb-1 max-sm:text-left sm:text-left">
@@ -35,7 +34,10 @@ export default function RegisterBuyer() {
                   placeholder="Search here"
                   className="flex-1 bg-transparent outline-none text-[#a4a4a4] font-opensans font-semibold"
                 />
-                <button type="button" className="text-green-600 rounded-full px-2 py-[2px] text-xs hidden sm:flex">
+                <button
+                  type="button"
+                  className="text-green-600 rounded-full px-2 py-[2px] text-xs hidden sm:flex"
+                >
                   <IoMdCheckmark className="size-[15px]" />
                 </button>
               </div>
@@ -44,7 +46,7 @@ export default function RegisterBuyer() {
 
           {/* First & Last Name */}
           <div className="flex sm:flex-row sm:justify-center sm:items-center flex-col items-start gap-3 w-full max-sm:mb-4">
-            <div className="flex items-center justify-center w-10 h-10 bg-gradient-to-b from-[#FF6413] to-[#FF8342] text-white rounded-full shadow-md sm:flex max-sm:hidden">
+            <div className="flex items-center justify-center w-10 h-9 bg-gradient-to-b from-[#FF6413] to-[#FF8342] text-white rounded-full shadow-md sm:flex max-sm:hidden self-start mt-[26px]">
               <FaUser className="text-lg" />
             </div>
 
@@ -79,7 +81,7 @@ export default function RegisterBuyer() {
 
           {/* Email */}
           <div className="flex sm:flex-row flex-col items-start gap-3 w-full max-sm:mb-4">
-            <div className="flex items-center justify-center w-10 h-10 bg-gradient-to-b from-[#FF6413] to-[#FF8342] text-white rounded-full shadow-md sm:flex max-sm:hidden">
+            <div className="flex items-center justify-center w-10 h-9 bg-gradient-to-b from-[#FF6413] to-[#FF8342] text-white rounded-full shadow-md sm:flex max-sm:hidden self-start mt-[26px]">
               <FaEnvelope className="text-lg" />
             </div>
             <div className="flex flex-col w-full">
@@ -98,7 +100,7 @@ export default function RegisterBuyer() {
 
           {/* Password */}
           <div className="flex sm:flex-row flex-col items-start gap-3 w-full max-sm:mb-4">
-            <div className="flex items-center justify-center w-10 h-10 bg-gradient-to-b from-[#FF6413] to-[#FF8342] text-white rounded-full shadow-md sm:flex max-sm:hidden">
+            <div className="flex items-center justify-center w-10 h-9 bg-gradient-to-b from-[#FF6413] to-[#FF8342] text-white rounded-full shadow-md sm:flex max-sm:hidden self-start mt-[26px]">
               <FaLock className="text-lg" />
             </div>
             <div className="flex flex-col w-full">
@@ -117,7 +119,7 @@ export default function RegisterBuyer() {
 
           {/* Address */}
           <div className="flex sm:flex-row flex-col items-start gap-3 w-full max-sm:mb-4">
-            <div className="flex items-center justify-center w-10 h-10 bg-gradient-to-b from-[#FF6413] to-[#FF8342] text-white rounded-full shadow-md sm:flex max-sm:hidden">
+            <div className="flex items-center justify-center w-10 h-9 bg-gradient-to-b from-[#FF6413] to-[#FF8342] text-white rounded-full shadow-md sm:flex max-sm:hidden self-start mt-[26px]">
               <FaGlobe className="text-lg" />
             </div>
             <div className="flex flex-col w-full">
@@ -136,7 +138,7 @@ export default function RegisterBuyer() {
 
           {/* Zip + Phone (kept both) */}
           <div className="flex sm:flex-row flex-col items-start gap-3 w-full max-sm:mb-4">
-            <div className="flex items-center justify-center w-10 h-10 bg-gradient-to-b from-[#FF6413] to-[#FF8342] text-white rounded-full shadow-md sm:flex max-sm:hidden">
+            <div className="flex items-center justify-center w-10 h-9 bg-gradient-to-b from-[#FF6413] to-[#FF8342] text-white rounded-full shadow-md sm:flex max-sm:hidden self-start mt-[26px]">
               <FaGlobe className="text-lg" />
             </div>
 
@@ -179,7 +181,7 @@ export default function RegisterBuyer() {
 
           {/* City + Country (kept both) */}
           <div className="flex sm:flex-row flex-col items-start gap-3 w-full max-sm:mb-4">
-            <div className="flex items-center justify-center w-10 h-10 bg-gradient-to-b from-[#FF6413] to-[#FF8342] text-white rounded-full shadow-md sm:flex max-sm:hidden">
+            <div className="flex items-center justify-center w-10 h-9 bg-gradient-to-b from-[#FF6413] to-[#FF8342] text-white rounded-full shadow-md sm:flex max-sm:hidden self-start mt-[26px]">
               <FaGlobe className="text-lg" />
             </div>
 
@@ -229,7 +231,8 @@ export default function RegisterBuyer() {
           </Link>
 
           <p className="text-xs text-gray-500 text-center mt-2">
-            NOTE: The Solokart platform is not responsible for lost orders or incorrect addresses and packages not received by the postal service.
+            NOTE: The Solokart platform is not responsible for lost orders or
+            incorrect addresses and packages not received by the postal service.
           </p>
         </form>
       </div>
