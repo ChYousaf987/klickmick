@@ -8,6 +8,7 @@ import Upload from "./components/Register/Buyer/Uploadimg/Upload";
 import Seller from "./components/Register/Seller/Seller";
 import RegisterSeller from "./components/Register/Seller/RegisterSeller";
 import UploadDocument from "./components/Register/Seller/UploadDocument";
+import FaceVerification from "./components/Register/Seller/FaceVerification";
 
 
 export default function App() {
@@ -23,6 +24,7 @@ export default function App() {
           <Route path="/seller" element={<Seller/>}/>
           <Route path="/regSeller" element={<RegisterSeller/>} />
           <Route path="/uploaddoc" element={<UploadDocument/>}/>
+          <Route path="/face" element={<FaceVerification/>}/>
         </Routes>
         <Footer />
       </BrowserRouter>

@@ -222,7 +222,7 @@ export default function RegisterSeller() {
           </div>
 
           {/* Continue Button */}
-          <Link to="/upload">
+          <Link to="/uploaddoc">
             <div className="flex justify-center">
               <button className="w-4/5 sm:w-[467px] bg-orange-500 text-white my-7 py-3 rounded-lg font-medium hover:bg-orange-600 transition-all duration-200">
                 Continue
