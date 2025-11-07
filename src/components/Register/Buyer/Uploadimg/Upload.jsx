@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-
+import { Link } from "react-router-dom";
 const Upload = () => {
   const [image, setImage] = useState(null);
 
@@ -44,9 +44,12 @@ const Upload = () => {
         </label>
 
         {/* Register Button */}
+        <Link to="/home1">
         <button className="w-[260px] mt-3 bg-orange-500 hover:bg-orange-600 text-white py-2 rounded-[16px] font-semibold transition-all duration-200">
           Register
         </button>
+        </Link>
+        
 
         {/* Note */}
         <p className="text-[10px] text-[#6b7280] mt-5 text-center leading-snug max-w-[95%]">

@@ -12,9 +12,9 @@ export default {
       fontFamily: {
         montserrat: ["Montserrat", "sans-serif"],
         opensans: ["Open Sans", "sans-serif"],
-        poppins: ["Poppins", "sans-serif"], // 👈 added Poppins here
+        poppins: ["Poppins", "sans-serif"],
       },
     },
   },
-  plugins: [],
+  plugins: [require("@tailwindcss/line-clamp")], // ✅ add this line
 };
