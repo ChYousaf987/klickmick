@@ -29,7 +29,7 @@ export default function CategorySlider() {
         </h2>
 
         {/* Scroll Section */}
-        <div className="overflow-x-auto scrollbar-hide py-2 px-2">
+        <div className="overflow-x-auto scrollbar-hide py-2 px-6">
           <div className="flex gap-4 sm:gap-6 min-w-max">
             {categories.map((category, index) => {
               const Icon = category.icon;
