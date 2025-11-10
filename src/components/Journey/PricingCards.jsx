@@ -83,7 +83,7 @@ const PricingCards = () => {
                             Register, Subscribe, and enjoy Live Auctions
                         </p>
 
-                        <div className="grid justify-start gap-5 mb-4 ml-3 sm:ml-12">
+                        <div className="grid justify-start gap-5 mb-4 ml-12">
                             <div className="flex justify-start items-end gap-10 sm:gap-10">
                                 <span className="text-lg text-[#3c3c3c] font-montserrat">6 Months</span>
                                 <span className="text-xl font-bold text-green-600 font-montserrat">$10</span>

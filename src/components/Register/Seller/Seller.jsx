@@ -23,7 +23,7 @@ const Seller = () => {
 
         {/* Plans Section */}
         <div className=" flex justify-between items-center sm:mx-40 mx-24 mt-5  ">
-          <p className="text-[#FF6413] font-semibold text-[20px] max-sm:mx-auto ">
+          <p className="text-[#FF6413] font-semibold text-[20px] max-sm:mx-auto  max-sm:text-[14px]">
             Plan - 1
           </p>
           <p className="text-[#FF6413] max-sm:hidden font-semibold text-[20px] ">
@@ -41,19 +41,19 @@ const Seller = () => {
             </p>
             <h4 className="text-3xl font-bold text-green-600 mb-6">$10</h4>
             <ul className="text-[16px] text-[#3c3c3c] font-poppins space-y-2 text-left mb-6">
-              <li className="flex items-center gap-2 max-sm:text-xs ">
+              <li className="flex items-center gap-2 max-sm:text-xs max-sm:gap-1">
                 <span className="text-orange-500 text-xl font-bold">•</span>
                 Access to all seller tools
               </li>
-              <li className="flex items-center gap-2 max-sm:text-xs ">
+              <li className="flex items-center gap-2 max-sm:text-xs max-sm:gap-1">
                 <span className="text-orange-500 text-xl font-bold">•</span>
                 Verified seller profile
               </li>
-              <li className="flex items-center gap-2 max-sm:text-xs  ">
+              <li className="flex items-center gap-2 max-sm:text-xs max-sm:gap-1 ">
                 <span className="text-orange-500 text-xl font-bold">•</span>
                 Stream up to 100 products
               </li>
-              <li className="flex items-center gap-2 max-sm:text-xs ">
+              <li className="flex items-center gap-2 max-sm:text-xs max-sm:gap-1">
                 <span className="text-orange-500 text-xl font-bold">•</span>
                 Email & stream notifications
               </li>
@@ -67,7 +67,7 @@ const Seller = () => {
           </div>
 
           {/* Plan 2 */}
-          <p className="text-[#FF6600] font-semibold sm:hidden text-[20px]">
+          <p className="text-[#FF6600] font-semibold sm:hidden text-[20px] max-sm:text-[14px]">
             Plan - 2
           </p>
           <div className="bg-white rounded-[20px] p-8 shadow-md hover:shadow-lg transition-all duration-200">
@@ -79,19 +79,19 @@ const Seller = () => {
             </p>
             <h4 className="text-3xl font-bold text-green-600 mb-6">$16</h4>
             <ul className="text-[16px] text-[#3c3c3c] font-poppins space-y-2 text-left mb-6">
-              <li className="flex items-center gap-2 max-sm:text-xs">
+              <li className="flex items-center gap-2 max-sm:text-xs max-sm:gap-1">
                 <span className="text-orange-500 text-xl font-bold">•</span>
                 Access to all seller tools
               </li>
-              <li className="flex items-center gap-2 max-sm:text-xs">
+              <li className="flex items-center gap-2 max-sm:text-xs max-sm:gap-1">
                 <span className="text-orange-500 text-xl font-bold">•</span>
                 Verified seller profile
               </li>
-              <li className="flex items-center gap-2 max-sm:text-xs">
+              <li className="flex items-center gap-2 max-sm:text-xs max-sm:gap-1">
                 <span className="text-orange-500 text-xl font-bold">•</span>
                 Stream up to 100 products
               </li>
-              <li className="flex items-center gap-2 max-sm:text-xs">
+              <li className="flex items-center gap-2 max-sm:text-xs max-sm:gap-1">
                 <span className="text-orange-500 text-xl font-bold">•</span>
                 Email & stream notifications
               </li>
