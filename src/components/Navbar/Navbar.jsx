@@ -1,7 +1,14 @@
 import React, { useState } from "react";
-import { FiMenu, FiSearch, FiShoppingCart, FiX } from "react-icons/fi";
+import {
+  FiMenu,
+  FiSearch,
+  FiShoppingCart,
+  FiX,
+  FiBell,
+  FiUser,
+} from "react-icons/fi";
 
-export default function Navbar() {
+export default function Navbar({ showIcons }) {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
@@ -17,18 +24,14 @@ export default function Navbar() {
           />
         </div>
 
-        {/* 🔸 Center: Search Bar (desktop only) */}
-        <div className="hidden rounded-xl md:flex items-stretch border border-[#ff6413] md:rounded-lg overflow-hidden w-3/4 max-w-xl">
+        {/* 🔸 Center: Search Bar */}
+        <div className="hidden md:flex items-stretch border border-[#ff6413] rounded-lg overflow-hidden w-3/4 max-w-xl">
           <select
             className="bg-gray-100 text-gray-600 text-sm px-4 py-1 outline-none"
-            style={{
-              WebkitAppearance: "none",
-              MozAppearance: "none",
-            }}
+            style={{ WebkitAppearance: "none", MozAppearance: "none" }}
           >
             <option>All</option>
           </select>
-
           <input
             type="text"
             placeholder="Search here..."
@@ -39,17 +42,55 @@ export default function Navbar() {
           </button>
         </div>
 
-        {/* 🔸 Right Side: Cart + Hamburger (mobile) */}
-        <div className="flex items-center space-x-3">
-          {/* Cart Icon (always visible) */}
-          <div className="relative">
-            <FiShoppingCart className="text-3xl text-black" />
-            <span className="flex justify-center items-center w-[15px] h-[15px] absolute -top-3 right-0.5 bg-[#ff6413] text-white text-xs rounded-full max-md:-top-2 max-md:w-[13px] max-md:h-[13px] max-md:text-[8px] max-md:right-1.5">
-              1
-            </span>
-          </div>
+        {/* 🔸 Right Side Icons */}
+        <div className="flex items-center space-x-5">
+          {showIcons ? (
+            <>
+              {/* User Icon */}
+              <div className="relative">
+                <FiUser className="text-2xl text-black cursor-pointer" />
+                <span className="absolute -top-2 -right-2 w-[14px] h-[14px] bg-[#ff6413] text-white text-[10px] flex items-center justify-center rounded-full">
+                  1
+                </span>
+              </div>
 
-          {/* Hamburger icon (mobile only) */}
+              {/* Notification Icon */}
+              <div className="relative">
+                <FiBell className="text-2xl text-black cursor-pointer" />
+                <span className="absolute -top-2 -right-2 w-[14px] h-[14px] bg-[#ff6413] text-white text-[10px] flex items-center justify-center rounded-full">
+                  1
+                </span>
+              </div>
+
+              {/* 🟠 Cart Icon */}
+              <div className="relative">
+                <FiShoppingCart className="text-2xl text-black cursor-pointer" />
+                <span className="absolute -top-2 -right-2 w-[14px] h-[14px] bg-[#ff6413] text-white text-[10px] flex items-center justify-center rounded-full">
+                  1
+                </span>
+              </div>
+
+              {/* 🟢 Profile Picture */}
+              <div className="relative">
+                <img
+                  src="/uploadimg.png"
+                  alt="Profile"
+                  className="w-9 h-9 rounded-full border border-[#ff6413] object-cover"
+                />
+                <span className="absolute bottom-0 right-0 w-2.5 h-2.5 bg-green-500 border-2 border-white rounded-full"></span>
+              </div>
+            </>
+          ) : (
+            /* 🟠 Default: Only Cart Icon */
+            <div className="relative">
+              <FiShoppingCart className="text-2xl text-black cursor-pointer" />
+              <span className="absolute -top-2 -right-2 w-[14px] h-[14px] bg-[#ff6413] text-white text-[10px] flex items-center justify-center rounded-full">
+                1
+              </span>
+            </div>
+          )}
+
+          {/* Hamburger (mobile only) */}
           <button
             className="md:hidden text-4xl text-[#ff6413]"
             onClick={() => setMenuOpen(!menuOpen)}
@@ -79,17 +120,13 @@ export default function Navbar() {
         </span>
       </div>
 
-      {/* 🔸 Mobile Dropdown Menu */}
+      {/* 🔸 Mobile Menu */}
       {menuOpen && (
         <div className="absolute top-full left-0 w-full bg-[#FFEFE6] shadow-md p-4 flex flex-col space-y-3 md:hidden z-50">
-          {/* Search bar inside mobile menu */}
           <div className="flex items-stretch border border-[#ff6413] rounded-xl overflow-hidden">
             <select
               className="bg-gray-100 text-gray-600 text-sm px-3 py-1 outline-none"
-              style={{
-                WebkitAppearance: "none",
-                MozAppearance: "none",
-              }}
+              style={{ WebkitAppearance: "none", MozAppearance: "none" }}
             >
               <option>All</option>
             </select>
@@ -103,7 +140,6 @@ export default function Navbar() {
             </button>
           </div>
 
-          {/* Menu items */}
           <span className="cursor-pointer hover:text-orange-600 font-poppins text-gray-700">
             All
           </span>
