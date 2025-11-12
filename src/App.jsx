@@ -10,7 +10,7 @@ import RegisterSeller from "./components/Register/Seller/RegisterSeller";
 import UploadDocument from "./components/Register/Seller/UploadDocument";
 import FaceVerification from "./components/Register/Seller/FaceVerification";
 import Home1 from "./components/Home1/Home1";
-
+import CreatorPage from './components/Home1/CreatorPage'
 
 export default function App() {
   return (
@@ -27,6 +27,7 @@ export default function App() {
           <Route path="/uploaddoc" element={<UploadDocument/>}/>
           <Route path="/face" element={<FaceVerification/>}/>
           <Route path="/home1" element={<Home1/>}/>
+          <Route path="/CreatorPage" element={<CreatorPage/>}/>
         </Routes>
         <Footer />
       </BrowserRouter>
